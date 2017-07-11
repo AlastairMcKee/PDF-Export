@@ -102,3 +102,65 @@
 
     </div>
 </div>
+
+<hr>
+
+<p>The <code>PdfExportService</code> can be used to export sections of a webpage to be saved as PDF or printed.</p>
+
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+       <tr>
+           <td>getDocument()</td>
+           <td><b>HTMLElement</b></td>
+           <td>This will return the HTMLElement containing the items that will be exported only.</td>
+       </tr>
+
+    </tbody>
+</table>
+
+<p>Items can be marked for exporting using the <code>pdfExportItem</code> directive. Items can be set to only be visible in 
+    the pdf view and not on the webpage by setting the directive on an <code>ng-template</code>.</p>
+
+
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+       <tr>
+           <td><b>@Input</b> row</td>
+           <td><b>number?</b></td>
+           <td>Defines which row the exported item should be displayed on.</td>
+       </tr>
+
+       <tr>
+           <td><b>@Input</b> columns</td>
+           <td><b>number?</b></td>
+           <td>Defines how many columns the exported item should fill.</td>
+       </tr>
+
+       <tr>
+           <td><b>@Input</b> data</td>
+           <td><b>any?</b></td>
+           <td>Sets the data required for items inside the <code>ng-template</code>.</td>
+       </tr>
+
+    </tbody>
+</table>
